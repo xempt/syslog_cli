@@ -77,9 +77,9 @@ def writeRsyslog(ipAddress,dest,rsyslog):
     except:
         return False
 
-def writeSyslogng(ipAddress,dest,syslogng):
-    try:
-        syslogng = open("/opt")
+#def writeSyslogng(ipAddress,dest,syslogng):
+#    try:
+#        syslogng = open("/opt")
 
 def rsyslog(ipAddress,dest):
     return print("if($fromhost-ip=='%s') then %s/%s/syslog.log\n& stop" % (args.ip,args.dest,args.ip))
